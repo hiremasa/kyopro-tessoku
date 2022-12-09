@@ -5,6 +5,4 @@ A_acc = [0] + list(itertools.accumulate(A))
 
 for _ in range(Q):
     l, r = map(int, input().split())
-    l -= 1
-    r -= 1
     print(A_acc[r] - A_acc[l-1])
